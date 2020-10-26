@@ -43,7 +43,6 @@ func compile(args compileArgs) error {
 		"-fno-ident",
 		// Don't output inputDir into debug info
 		"-fdebug-prefix-map="+inputDir+"="+relInputDir,
-		"-fdebug-compilation-dir", ".",
 		// We always want BTF to be generated, so enforce debug symbols
 		"-g",
 	)
